@@ -1,13 +1,10 @@
 package h2tml.qlns.controller;
 
-import h2tml.qlns.model.Departs;
 import h2tml.qlns.model.Project;
-import h2tml.qlns.model.Staffs;
 import h2tml.qlns.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

@@ -70,4 +70,14 @@ public class Departs {
 	public void setSdt(String sdt) {
 		this.sdt = sdt;
 	}
+
+	@Override
+	public String toString() {
+		return "Departs{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", staffs=" + staffs +
+				", sdt='" + sdt + '\'' +
+				'}';
+	}
 }
