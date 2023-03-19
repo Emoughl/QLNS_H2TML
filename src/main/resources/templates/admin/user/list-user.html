@@ -8,13 +8,14 @@
 <body>
 <section layout:fragment="header">
     <h1>
-        Thông tin nhân viên
+        Thông tin nhân viên!
         
     </h1>
     <ol class="breadcrumb">
         <li><a href="/"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
         <li class="active">Nhân Viên</li>
     </ol>
+
 </section>
 <div layout:fragment="content">
     <div class="row">
@@ -34,14 +35,14 @@
                         <div class="alert alert-success alert-dismissible">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">Ã—</button>
                             <h4><i class="icon fa fa-check"></i> Success!</h4>
-                            Information saved successfully.
+                            Lưu thông tin thành công!
                         </div>
                     </div>
                     <div th:if="${param.deleted}">
                         <div class="alert alert-info alert-dismissible">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">Ã—</button>
                             <h4><i class="icon fa fa-check"></i> Deleted!</h4>
-                            Information deleted successfully.
+                            Lưu thông tin thành công!
                         </div>
                     </div>
                     <div class="row">
