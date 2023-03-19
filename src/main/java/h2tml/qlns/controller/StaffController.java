@@ -3,9 +3,6 @@ package h2tml.qlns.controller;
 import java.util.List;
 
 import javax.validation.Valid;
-
-import h2tml.qlns.model.Product;
-import h2tml.qlns.model.ProductType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,7 +1,6 @@
 package h2tml.qlns.controller;
 
 import h2tml.qlns.model.Departs;
-import h2tml.qlns.model.ProductType;
 import h2tml.qlns.model.Project;
 import h2tml.qlns.model.Staffs;
 import h2tml.qlns.service.ProjectService;

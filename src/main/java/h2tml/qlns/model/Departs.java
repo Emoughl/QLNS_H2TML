@@ -25,16 +25,18 @@ public class Departs {
 	
 	@OneToMany(fetch = FetchType.LAZY,mappedBy ="departs" )
 	private Set<Staffs> staffs;
-
+	@Column(length = 12)
+	private String sdt;
 	public Departs() {
 		
 	}
 
-	public Departs(Long id, String name, Set<Staffs> staffs) {
+	public Departs(Long id, String name, Set<Staffs> staffs , String sdt) {
 		
 		this.id = id;
 		this.name = name;
 		this.staffs = staffs;
+		this.sdt = sdt;
 	}
 
 	public Long getId() {
@@ -60,6 +62,12 @@ public class Departs {
 	public void setStaffs(Set<Staffs> staffs) {
 		this.staffs = staffs;
 	}
-     
-	
+
+	public String getSdt() {
+		return sdt;
+	}
+
+	public void setSdt(String sdt) {
+		this.sdt = sdt;
+	}
 }
