@@ -12,5 +12,4 @@ public interface ProjectService {
     Project getById(Long id);
 
     void deleteById(Long id);
-
 }
