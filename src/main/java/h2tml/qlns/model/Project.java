@@ -13,7 +13,6 @@ public class Project {
 
     private String name;
 
-    private String salary;
 
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     @Temporal(TemporalType.DATE)
@@ -22,6 +21,10 @@ public class Project {
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     @Temporal(TemporalType.DATE)
     private Date end;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "salaryId")
+    private Salary salary;
 
     public long getId() {
         return id;
@@ -37,14 +40,6 @@ public class Project {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getSalary() {
-        return salary;
-    }
-
-    public void setSalary(String salary) {
-        this.salary = salary;
     }
 
     public Date getStart() {
@@ -63,14 +58,22 @@ public class Project {
         this.end = end;
     }
 
+    public Salary getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Salary salary) {
+        this.salary = salary;
+    }
+
     @Override
     public String toString() {
         return "Project{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", salary='" + salary + '\'' +
                 ", start=" + start +
                 ", end=" + end +
+                ", salary=" + salary +
                 '}';
     }
 }

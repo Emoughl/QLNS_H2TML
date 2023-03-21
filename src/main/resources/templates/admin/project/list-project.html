@@ -40,7 +40,7 @@
                     </div>
                     <div th:if="${param.deleted}">
                         <div class="alert alert-info alert-dismissible">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">Ã—</button>
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">Thành Công</button>
                             <h4><i class="icon fa fa-check"></i> Đã Xóa</h4>
                             Xóa thành công.
                         </div>
@@ -63,7 +63,7 @@
                                 <tr th:each="project : ${listProject}">
                                     <td th:text="${project.id}">ID Du An</td>
                                     <td th:text="${project.name}">Ten Du An</td>
-                                    <td th:text="${project.salary}">Thuong Du An</td>
+                                    <td th:text="${project.salary.salary_detail}">Thuong Du An</td>
                                     <td th:text="${project.start}">Ngay bat dau</td>
                                     <td th:text="${project.end}">Ngay ket thuc</td>
                                     <td>

@@ -33,19 +33,19 @@
 								<button type="button" class="close" data-dismiss="alert"
 									aria-hidden="true">Ã—</button>
 								<h4>
-									<i class="icon fa fa-check"></i> Success!
+									<i class="icon fa fa-check"></i> Thành Công!
 								</h4>
-								Information saved successfully.
+								Thông tin lưu lại thành công.
 							</div>
 						</div>
 						<div th:if="${param.deleted}">
 							<div class="alert alert-info alert-dismissible">
 								<button type="button" class="close" data-dismiss="alert"
-									aria-hidden="true">Ã—</button>
+									aria-hidden="true">Thành Công</button>
 								<h4>
-									<i class="icon fa fa-check"></i> Deleted!
+									<i class="icon fa fa-check"></i> Đã Xóa!
 								</h4>
-								Information deleted successfully.
+								Thông tin đã được xóa.
 							</div>
 						</div>
 						<div class="row">
@@ -55,8 +55,8 @@
 									role="grid" aria-describedby="example1_info">
 									<thead class="thead">
 										<tr>
-											<th>Hình Ảnh</th>
 											<th>Mã Nhân Viên</th>
+											<th>Hình Ảnh</th>
 											<th>Tên Nhân Viên</th>
 											<th>Ngày Sinh</th>
 											<th>Số Điện Thoại</th>
@@ -64,17 +64,16 @@
 											<th>Phòng Ban</th>
 											<th>Dự Án</th>
 											<th>Chức Vụ</th>
-											<th>Hệ Số Lương</th>
+											<th>Lương Cơ Bản</th>
 											<th>Tùy Chọn</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr th:each="listUsers : ${listEmployee}">
-
-											<td><img th:src="@{'/getimage/'+${listUsers.photo}}"
-												style="width: 60px; height: 70px" class="user-image"
-												alt="User Image"></td>
 											<td th:text="${listUsers.id}"></td>
+											<td><img th:src="@{'/getimage/'+${listUsers.photo}}"
+													 style="width: 80px; height: 100px" class="user-image"
+													 alt="User Image"></td>
 											<td th:text="${listUsers.name}"></td>
 											<td th:text="${listUsers.birthday}"></td>
 											<td th:text="${listUsers.phone}"></td>

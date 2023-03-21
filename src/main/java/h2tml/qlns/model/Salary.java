@@ -15,11 +15,7 @@ public class Salary {
 
     private String  salary_name;
 
-   private  Integer id_staffs;
-
-    private  Integer id_departs;
-
-    private Integer  id_position;
+    private String salary_detail;
 
     public long getId() {
         return id;
@@ -37,28 +33,12 @@ public class Salary {
         this.salary_name = salary_name;
     }
 
-    public Integer getId_staffs() {
-        return id_staffs;
+    public String getSalary_detail() {
+        return salary_detail;
     }
 
-    public void setId_staffs(Integer id_staffs) {
-        this.id_staffs = id_staffs;
-    }
-
-    public Integer getId_departs() {
-        return id_departs;
-    }
-
-    public void setId_departs(Integer id_departs) {
-        this.id_departs = id_departs;
-    }
-
-    public Integer getId_position() {
-        return id_position;
-    }
-
-    public void setId_position(Integer id_position) {
-        this.id_position = id_position;
+    public void setSalary_detail(String salary_detail) {
+        this.salary_detail = salary_detail;
     }
 
     @Override
@@ -66,9 +46,7 @@ public class Salary {
         return "Salary{" +
                 "id=" + id +
                 ", salary_name='" + salary_name + '\'' +
-                ", id_staffs=" + id_staffs +
-                ", id_departs=" + id_departs +
-                ", id_position=" + id_position +
+                ", salary_detail='" + salary_detail + '\'' +
                 '}';
     }
 }

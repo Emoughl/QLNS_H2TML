@@ -16,10 +16,10 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="/dist/css/AdminLTE.min.css" />
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background: wheat;">
 <div class="login-box">
     <div class="login-logo">
-        <a href="#"><b>QUẢN LÝ KHO HÀNG</b></a>
+        <a href="#"><b>QUẢN LÝ NHÂN SỰ</b></a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
@@ -27,19 +27,18 @@
 
         <div th:if="${param.error}">
             <div class="alert alert-danger">
-                There was some error in registration.
+                Không hợp lệ.
             </div>
         </div>
 
         <div th:if="${param.username}">
             <div class="alert alert-danger">
-                There is already a user registered with the username/email provided.
+                Tài khoản đã tồn tại.
             </div>
         </div>
 
         <div th:if="${param.success}">
-            <div class="alert alert-info">You've successfully registered
-                to our awesome app!</div>
+            <div class="alert alert-info">Bạn đã đăng ký thành công</div>
         </div>
 
         <form th:action="@{/register}" th:object="${userRegistrationDto}" method="post">

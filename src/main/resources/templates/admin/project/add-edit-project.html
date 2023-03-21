@@ -45,8 +45,8 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Thưởng Dự Án</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control"  th:field="*{salary}" />
-                                <p class="text-red" th:if="${#fields.hasErrors('salary')}" th:errors="*{salary}"></p>
+                                <input type="text" class="form-control"  th:field="*{salary.id}" />
+                                <p class="text-red" th:if="${#fields.hasErrors('salary.salary_detail')}" th:errors="*{salary.salary_detail}"></p>
                             </div>
                         </div>
                         <div class="form-group">
